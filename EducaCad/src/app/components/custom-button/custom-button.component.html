@@ -1,5 +1,13 @@
 <div>
-    <button (click)="onClick()">
+    <button (click)="onClick()" 
+    [ngStyle]="{
+        'color': textColor,
+        'background-color': backgroundColor,
+        'border-radius': borderRadius,
+        'height': height,
+        'width': width,
+        'font-size': fontSize
+        }">
         {{ label }}
     </button>
 </div>

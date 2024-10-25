@@ -1,22 +1,28 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CustomButtonComponent } from '../../components/custom-button/custom-button.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    CustomButtonComponent,
+    CommonModule
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
   router: any;
 
-  navigate(){
-    this.router.navigate(["signup"])
+  test() {
+    console.log("hello World");
   }
-  navigate(){
-    this.router.navigate(["login"])
+
+  hello() {
+    alert("FUNCIONANDO");
   }
 
 }
