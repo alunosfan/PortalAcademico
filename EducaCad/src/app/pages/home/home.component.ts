@@ -15,14 +15,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  router: any;
-
-  test() {
-    console.log("hello World");
-  }
-
-  hello() {
-    alert("FUNCIONANDO");
-  }
-
+  
 }
