@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [
     CustomButtonComponent,
-    CommonModule
+    CommonModule,
+
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

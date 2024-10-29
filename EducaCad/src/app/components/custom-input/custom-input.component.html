@@ -1,1 +1,15 @@
-<p>custom-input works!</p>
+<div>
+    <input 
+    [type]="type"
+    [placeholder]="placeholder"
+    [value]="value"
+    [ngStyle]="{
+        'background-color': backgroundColor,
+        'height': height,
+        'width': width,
+        'border-radius': borderRadius,
+        'border': border,
+        }"
+    (input)="onInput($event)"
+    >
+</div>
