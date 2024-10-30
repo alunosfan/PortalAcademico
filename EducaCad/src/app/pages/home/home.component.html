@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar">
+    <div class="logo">educacad</div>
+    <div class="spacer"></div>
+    <div class="nav-buttons">
+      <CustomButton
+        label="Login"
+        [backgroundColor]="'#f1EED8'"
+        [textColor]="'#FD9F00'"
+        [fontSize]="'24px'"
+        [borderRadius]="'14px'"
+        [width]="'120px'"
+        (action)="openLogin()"
+      ></CustomButton>
+    </div>
+  </nav>
+</header>
+
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col md-6">
+      <h1>Bem-vindo ao Educacad</h1>
+      <p>
+        No EducaCad, tornar-se um aluno nunca foi tão fácil. Cadastre-se agora e
+        dê o primeiro passo para um mundo de oportunidades.
+      </p>
+      <button>Comece Já</button>
+    </div>
+  </div>
+  <div class="col-md-6" id="image-section">
+    <img src="#" alt="Imagem de Educação" />
+  </div>
+</div>

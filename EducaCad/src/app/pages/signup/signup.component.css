@@ -3,3 +3,24 @@
     --darkBlueColor: #1B3862;
     --luminousBlueColor: #5FA2CA;
 */
+
+.navbar {
+  background-color: darkblue;
+  display: flex;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+
+.nav-buttons {
+  justify-content: end;
+}
+
+.form {
+  background-color: beige;
+}
+
+#buttonSubmit {
+  color: #fd9f00;
+}
