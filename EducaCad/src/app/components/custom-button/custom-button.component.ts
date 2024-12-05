@@ -16,9 +16,9 @@ export class CustomButtonComponent {
   @Input() textColor: string = '#ffffff';
   @Input() backgroundColor: string = '#007bff';
   @Input() borderRadius: string = '10px';
-  @Input() height: string = '50px';  
+  @Input() fontWeight: string = '800';  
   @Input() fontSize: string = '16px';
-  @Input() width: string = '100%';
+  @Input() padding: string = '10px 30px';
   @Output() action = new EventEmitter<void>();
 
   onClick() {

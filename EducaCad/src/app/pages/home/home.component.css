@@ -4,3 +4,43 @@
     --luminousBlueColor: #5FA2CA;
 */
 
+#nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    nav{
+        /* height: 90px; */
+        width: 1396px;
+        display: flex;
+        background-color: #1B3862;
+        border-radius: 20px;
+        padding: 15px 30px;
+        justify-content: space-between;
+        
+        #buttons{
+            padding-top: 4px;
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-family: "Rethink Sans", sans-serif;
+    color: #1B3862;
+
+    .title{
+        font-weight: 800;
+        font-size: 70px;
+    }
+
+    .subtile{
+        font-weight: 500;
+        font-size: 36px;
+        padding-bottom: 50px;
+    }
+}

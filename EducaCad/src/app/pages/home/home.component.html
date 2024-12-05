@@ -1,0 +1,44 @@
+<div id="nav">
+    <nav>
+        <educaCadLogo></educaCadLogo>
+        <div id="buttons">
+            <CustomButton
+                label="Login"
+                [backgroundColor]="'#f1EED8'"
+                [textColor]="'#FD9F00'"
+                [borderRadius]="'14px'"
+                [fontSize]="'24px'"
+                (action)="openLogin()"
+            ></CustomButton>
+            <CustomButton
+                label="Cadastre-se"
+                [backgroundColor]="'#FD9F00'"
+                [textColor]="'#1B3862'"
+                [borderRadius]="'14px'"
+                [fontSize]="'24px'"
+                (action)="openSingUp()"
+            ></CustomButton>
+        </div>
+    </nav>
+</div>
+<main>
+    <div class="container">
+        <p class="title">Bem-vindo<b> ao <br></b><b>Educa</b>Cad!</p>
+        <p class="subtile">
+            No Educa<b>Cad</b>, tornar-se um aluno<br>
+            nunca foi tão fácil. Cadastre-se agora<br>
+            e dê o primeiro passo para um<br>
+            mundo de oportunidades.
+        </p>
+        <CustomButton
+            label="Comece já!"
+            [backgroundColor]="'#FD9F00'"
+            [textColor]="'#fff'"
+            [borderRadius]="'20px'"
+            [fontSize]="'40px'"
+            [padding]="'25px 35px'"
+            (action)="openSingUp()"
+        ></CustomButton>
+    </div>
+    <doneManImage></doneManImage>
+</main>
