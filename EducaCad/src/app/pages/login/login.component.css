@@ -3,3 +3,68 @@
     --darkBlueColor: #1B3862;
     --luminousBlueColor: #5FA2CA;
 */
+
+#nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    nav{
+        /* height: 90px; */
+        width: 1396px;
+        display: flex;
+        padding: 15px 30px;
+        justify-content: space-between;
+        
+        #buttons{
+            padding-top: 4px;
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+main{
+    display: flex;
+    justify-content: center;
+    
+    #form{
+        font-family: "Rethink Sans", sans-serif;
+        background-color: #f3f3f3;
+        border-radius: 50px;
+        padding: 61px 30px;
+        width: 628px;
+
+        .title{
+            font-size: 48px;
+            font-weight: 800;
+        }
+        .subtitle{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        form{
+            p{
+                display: flex;
+                justify-content: end;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+            font-family: "Rethink Sans", sans-serif;
+            font-weight: 500;
+            color: #000;
+
+            .line {
+                flex: 3;
+                height: 1px;
+                background-color: #000;
+            }
+        }
+    }
+}

@@ -1,1 +1,61 @@
-<p>login works!</p>
+<div id="nav">
+    <nav>
+        <logoEducaCadBlue></logoEducaCadBlue>
+        <div id="buttons">
+            <CustomButton
+                label="Cadastre-se"
+                [backgroundColor]="'#fff'"
+                [textColor]="'#1B3862'"
+                [borderRadius]="'0px'"
+                [fontSize]="'24px'"
+                (action)="openSingUp()"
+            ></CustomButton>
+            <CustomButton
+                label="Suporte"
+                [backgroundColor]="'#FD9F00'"
+                [textColor]="'#fff'"
+                [borderRadius]="'14px'"
+                [fontSize]="'24px'"
+                (action)="openSuport()"
+            ></CustomButton>
+        </div>
+    </nav>
+</div>
+<main>
+    <div id="form">
+        <h1 class="title">Olá, entre agora!</h1>
+        <p class="subtitle">Insira as informações abaixo para acessar sua conta.</p>
+        <form [formGroup]="loginForm">
+            <CustomInput
+            [type]="'email'"
+            [placeholder]="'E-mail'"
+            [height]="'76px'"
+            [width]="'626px'"
+            [border]="'0'"
+            ></CustomInput>
+            <CustomInput
+            [type]="'password'"
+            [placeholder]="'Senha'"
+            [height]="'76px'"
+            [width]="'626px'"
+            [border]="'0'"
+            ></CustomInput>
+            <p id="forgotPassword">Esqueceu a senha?</p>
+            <CustomButton
+                label="Entrar"
+                [backgroundColor]="'#FD9F00'"
+                [textColor]="'#000'"
+                [borderRadius]="'15px'"
+                [fontSize]="'24px'"
+                [fontWeight]="'700'"
+                [padding]="'25px 290px'"
+                (action)="openSingUp()"
+            ></CustomButton>
+        </form>
+        <div class="divider">
+            <div class="line"></div>
+            <span>Ou entre com</span>
+            <div class="line"></div>
+        </div>
+    </div>
+</main>

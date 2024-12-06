@@ -27,6 +27,5 @@ export class HomeComponent {
   }
   openSingUp(){
     this.router.navigate(["signup"])
-    console.log("pressed")
   }
 }
