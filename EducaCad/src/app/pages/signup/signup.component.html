@@ -1,1 +1,82 @@
-<p>signup works!</p>
+<div id="nav">
+    <nav>
+        <logoEducaCadBlue></logoEducaCadBlue>
+        <div id="buttons">
+            <CustomButton
+                label="Login"
+                [backgroundColor]="'#fff'"
+                [textColor]="'#1B3862'"
+                [borderRadius]="'0px'"
+                [fontSize]="'24px'"
+                (action)="openLogin()"
+            ></CustomButton>
+            <CustomButton
+                label="Suporte"
+                [backgroundColor]="'#FD9F00'"
+                [textColor]="'#fff'"
+                [borderRadius]="'14px'"
+                [fontSize]="'24px'"
+                (action)="openSuport()"
+            ></CustomButton>
+        </div>
+    </nav>
+</div>
+<main>
+    <EmptyStateSignUp></EmptyStateSignUp>    
+    <div id="form">
+        <h1 class="title">Vamos começar!</h1>
+        <p class="subtitle">Preencha os campos abaixo para criar sua conta.</p>
+        <form [formGroup]="signUpForm">
+            <CustomInput
+            [type]="'text'"
+            [placeholder]="'Nome'"
+            [height]="'76px'"
+            [width]="'305px'"
+            [border]="'0'"
+            ></CustomInput>
+            <CustomInput
+            [type]="'text'"
+            [placeholder]="'Sobrenome'"
+            [height]="'76px'"
+            [width]="'305px'"
+            [border]="'0'"
+            ></CustomInput>
+            <CustomInput
+            [type]="'email'"
+            [placeholder]="'E-mail'"
+            [height]="'76px'"
+            [width]="'626px'"
+            [border]="'0'"
+            ></CustomInput>
+            <CustomInput
+            [type]="'password'"
+            [placeholder]="'Senha'"
+            [height]="'76px'"
+            [width]="'626px'"
+            [border]="'0'"
+            ></CustomInput>
+            
+            <CustomInput
+            [type]="'password'"
+            [placeholder]="'Confirme a senha'"
+            [height]="'76px'"
+            [width]="'626px'"
+            [border]="'0'"
+            ></CustomInput>
+        
+            <p>Ao criar uma conta em nossa plataforma, você aceita nossos <b>Termos de Uso</b> <br> 
+                e <b>Política de Privacidade</b>. </p>
+            <CustomButton
+                label="Cadastre-se"
+                [backgroundColor]="'#FD9F00'"
+                [textColor]="'#000'"
+                [borderRadius]="'15px'"
+                [fontSize]="'24px'"
+                [fontWeight]="'700'"
+                [padding]="'25px 290px'"
+                (action)="openDashboard()"
+            ></CustomButton>
+        </form>
+        <p class="newAccount">Já tem uma conta?<b><a href="/login">Entre</a></b></p>
+    </div>
+</main>

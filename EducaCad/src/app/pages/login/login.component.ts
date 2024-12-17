@@ -5,6 +5,8 @@ import { LogoEducaCadBlueComponent } from '../../icons/logo-educa-cad-blue/logo-
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { EmptyStateLoginComponent } from '../../icons/empty-state-login/empty-state-login.component';
+import { AnothersAccountsComponent } from '../../icons/anothers-accounts/anothers-accounts.component';
 
 interface LoginForm {
   email: FormControl,
@@ -19,7 +21,9 @@ interface LoginForm {
     CustomInputComponent,
     CommonModule,
     LogoEducaCadBlueComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    EmptyStateLoginComponent,
+    AnothersAccountsComponent
 
   ],
   templateUrl: './login.component.html',
@@ -43,5 +47,8 @@ export class LoginComponent {
   }
   openSingUp(){
     this.router.navigate(["signup"])
+  }
+  openDashboard(){
+    this.router.navigate(["dashboard"])
   }
 }

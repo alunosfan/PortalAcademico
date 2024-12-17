@@ -49,7 +49,7 @@
                 [fontSize]="'24px'"
                 [fontWeight]="'700'"
                 [padding]="'25px 290px'"
-                (action)="openSingUp()"
+                (action)="openDashboard()"
             ></CustomButton>
         </form>
         <div class="divider">
@@ -57,5 +57,10 @@
             <span>Ou entre com</span>
             <div class="line"></div>
         </div>
+        <AnothersAccounts></AnothersAccounts>
+        <p class="newAccount">Não tem uma conta?<b><a href="/signup">Crie agora</a></b></p>
     </div>
+
+    <EmptyStateLogin></EmptyStateLogin>
+
 </main>
